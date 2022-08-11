@@ -11,7 +11,7 @@ import { loadStripe } from "@stripe/stripe-js";
 const pubKey = import.meta.env.VITE_stripePubKey;
 const clientSecret = import.meta.env.VITE_stripeClientSecret;
 const stripePromise = loadStripe(pubKey);
-const options = {
+const options = { 
   clientSecret: `{{clientSecret}}`,
 };
 
