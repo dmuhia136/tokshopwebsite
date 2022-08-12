@@ -1,115 +1,13 @@
-html {
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
-}
-
 body {
-  background-color: white;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  .red-btn {
-    @apply bg-red-20 text-white font-medium px-4 py-[0.3rem] rounded-lg disabled:bg-gray-30
-		hover:bg-red-600 text-lg tracking-wide;
-  }
-
-  .blue-btn {
-    @apply bg-blue-20 rounded-lg  hover:bg-[#0f4d92] disabled:bg-gray-400
-    px-4 py-[0.3rem] text-white  text-lg transition-all ease-in-out font-semibold tracking-wide;
-  }
-  .red-outline-btn {
-    @apply px-4 py-[0.3rem] bg-white outline-none border-[0.1rem] rounded-lg 
-	 border-red-500 text-red-500 focus:text-white focus:bg-red-500 
-    text-lg font-semibold  transition-all ease-in-out;
-  }
-
-  .dialog-wrapper {
-    @apply fixed inset-0 z-50 overflow-auto bg-transparent flex flex-col;
-  }
-
-  .dialog {
-    @apply flex flex-col relative px-10 py-16 bg-white w-[90vw] max-w-md m-auto
-      rounded-md;
-  }
-
-  .breadcrumb-active {
-    @apply text-blue-30 text-lg md:text-2xl font-semibold  mr-4 hover:underline
-      transition-all ease-in-out;
-  }
-
-  .breadcrumb-inactive {
-    @apply text-black-40 text-lg md:text-2xl font-semibold  mr-4;
-  }
-
-  .inputs {
-    @apply text-black-40 text-base font-semibold h-[2.25rem] outline-none rounded-[0.25rem] 
-      px-[1rem] form-ring placeholder:text-black-80 placeholder:font-medium tracking-wide;
-  }
-
-  .textarea {
-    @apply text-black-40 text-base font-semibold   outline-none rounded-[0.25rem] 
-      px-[1rem] form-ring placeholder:text-black-80 placeholder:font-medium tracking-wide;
-  }
-
-  .labels {
-    @apply text-sm font-semibold mt-[2.25rem]  mb-[0.5rem];
-  }
-
-  .back {
-    @apply text-4xl absolute top-2 left-5 text-blue-30 hover:text-blue-900;
-  }
-
-  /* ..................................datatable rows................................... */
-  .fQfBPh {
-    @apply text-gray-900 dark:text-gray-200  font-bold  text-lg text-opacity-100;
-  }
-
-  /* ...............................datatable header............................................... */
-  .guIQRM {
-    @apply bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-200;
-  }
-  /* ............................datatable footer......................................... */
-  .gyWNLn {
-    @apply bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-200;
-  }
-  /* .................................datatable title....................................... */
-  .hmmucc {
-    @apply bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-200;
-  }
-  /* subheader */
-  .kJEgDS {
-    justify-content: flex-start;
-  }
-
-  .gradient {
-    @apply bg-gradient-to-b from-[rgba(0,0,0,.25)] via-[hsla(0,0%,100%,0)] to-[rgba(0,0,0,.25)];
-  }
-
-  .form-ring {
-    @apply ring-1 ring-blue-40 focus:ring-black-70;
-  }
-
-  .card-border {
-    @apply border-[0.1rem] border-white hover:border-gray-300;
-  }
-  .borders {
-    @apply border-[0.1rem] border-gray-300;
-  }
-
-  .card-link {
-    @apply text-blue-40 underline text-[1.2rem] font-[600];
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
